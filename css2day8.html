@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model & Flexbox Practice</title>
+    <style>
+        
+        .box1 {
+            background-color: lightblue;
+            padding: 15px;
+            border: 3px solid black;
+            margin: 20px;
+        }
+
+       
+        .box2 {
+            background-color: lightgreen;
+            padding: 10px 20px 30px 40px; 
+        }
+
+        
+        .box1-margin {
+            background-color: lightcoral;
+            padding: 30px;
+            margin-right: 20px;
+        }
+
+        .box2-margin {
+            background-color: lightseagreen;
+            margin: 30px;
+        }
+
+        .container-margin {
+            display: flex;
+        }
+
+        
+        .container-flex-row {
+            display: flex;
+        }
+
+        .box-flex {
+            background-color: lightblue;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        
+        .container-flex-center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .box-flex-center {
+            background-color: lightgreen;
+            padding: 20px;
+        }
+
+        
+        .container-flex-column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .box-flex-column {
+            background-color: lightcoral;
+            padding: 20px;
+            margin: 10px;
+        }
+
+       
+        .container-flex-gap {
+            display: flex;
+            gap: 20px;
+        }
+
+        .box-flex-gap {
+            background-color: lightblue;
+            padding: 20px;
+        }
+
+        
+        .container-flex-wrap {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .box-flex-wrap {
+            background-color: lightblue;
+            padding: 20px;
+            width: 200px;
+        }
+
+        @media (max-width: 768px) {
+            .box-flex-wrap {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    
+    <div class="box1">Hello World</div>
+
+   
+    <div class="box2">Padding Example</div>
+
+    
+    <div class="container-margin">
+        <div class="box1-margin">Padding</div>
+        <div class="box2-margin">Margin</div>
+    </div>
+
+    
+    <div class="container-flex-row">
+        <div class="box-flex">Box 1</div>
+        <div class="box-flex">Box 2</div>
+        <div class="box-flex">Box 3</div>
+    </div>
+
+    
+    <div class="container-flex-center">
+        <div class="box-flex-center">Centered Box</div>
+    </div>
+
+   
+    <div class="container-flex-column">
+        <div class="box-flex-column">Box 1</div>
+        <div class="box-flex-column">Box 2</div>
+        <div class="box-flex-column">Box 3</div>
+    </div>
+
+    
+    <div class="container-flex-gap">
+        <div class="box-flex-gap">Box 1</div>
+        <div class="box-flex-gap">Box 2</div>
+        <div class="box-flex-gap">Box 3</div>
+    </div>
+
+   
+    <div class="container-flex-wrap">
+        <div class="box-flex-wrap">Box 1</div>
+        <div class="box-flex-wrap">Box 2</div>
+        <div class="box-flex-wrap">Box 3</div>
+        <div class="box-flex-wrap">Box 4</div>
+        <div class="box-flex-wrap">Box 5</div>
+    </div>
+
+</body>
+</html>
